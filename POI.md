@@ -1,5 +1,5 @@
-##excel读写工具-POI
-###介绍
+## excel读写工具-POI
+### 介绍
 
 目前常见读写Excel的工具类开源JavaAPI有两种方式
 
@@ -14,7 +14,7 @@
 
 * 对于OOXML版本的Excel,一个Sheet工作表它的行最多支持到1048576行,列支持到65536列.
 
-###核心API
+### 核心API
 
 新建工作簿
 
@@ -73,7 +73,7 @@ nCell.setCellStyle(leftStyle(wb));
 ```
 
 
-###POI读写大数据量EXCEL
+### POI读写大数据量EXCEL
 
 有三种模式:
 
@@ -85,7 +85,7 @@ nCell.setCellStyle(leftStyle(wb));
 
 采用的读取方式是事件模型eventusermodel,因为Excel2007采用的存储方式实际上是**xml**形式Excel2007可以用系统自带的解压缩软件解压之后可以看到数据都是存储成**xml**格式的数据,所以这里采用**sax**的方式对Excel文件进行解析.
 
-###应用(查询数据库,导出一个Excel表格)
+### 应用(查询数据库,导出一个Excel表格)
 
 ```
 public String export() throws Exception{
